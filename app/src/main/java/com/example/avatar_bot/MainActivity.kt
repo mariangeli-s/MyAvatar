@@ -66,7 +66,7 @@ fun PresentationCard() {
                 )
                 Spacer(modifier = Modifier.height(16.dp))
                 Text(
-                    text = "denisse Zeee",
+                    text = "Mariii Sants",
                     fontSize = 26.sp,
                     fontWeight = FontWeight.Bold,
                     color = Color(0xFF1E88E5)
@@ -78,7 +78,7 @@ fun PresentationCard() {
                 )
                 Spacer(modifier = Modifier.height(12.dp))
                 Text(
-                    text = "Contacto: denisse@gmail.com",
+                    text = "Contacto: marisanti@gmail.com",
                     fontSize = 14.sp,
                     color = Color.DarkGray
                 )
@@ -88,9 +88,9 @@ fun PresentationCard() {
                     fontWeight = FontWeight.SemiBold,
                     color = Color(0xFF1E88E5)
                 )
-                Text(text = "LinkedIn: linkedin.com/in/denisse")
-                Text(text = "GitHub: github.com/denisse")
-                Text(text = "Instagram: @denisse")
+                Text(text = "LinkedIn: linkedin.com/in/mari")
+                Text(text = "GitHub: github.com/mari")
+                Text(text = "Instagram: @mari.s")
                 Spacer(modifier = Modifier.height(12.dp))
                 Text(
                     text = "Habilidades:",
@@ -99,7 +99,7 @@ fun PresentationCard() {
                 )
                 Text(text = "• Android (Kotlin, Compose)")
                 Text(text = "• SQL, figma")
-                Text(text = "• Blender")
+                Text(text = "• Python")
                 Text(text = "• Habilidades blandas")
             }
         }
