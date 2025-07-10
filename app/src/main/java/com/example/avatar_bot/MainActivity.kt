@@ -19,6 +19,7 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import android.os.Bundle
+import androidx.compose.foundation.background
 import androidx.compose.ui.unit.sp
 
 
@@ -42,8 +43,25 @@ class MainActivity : ComponentActivity() {
 fun PresentationCard() {
     Box(
         contentAlignment = Alignment.Center,
-        modifier = Modifier.fillMaxSize()
+        modifier = Modifier
+            .fillMaxSize()
+            .background(Color.Black)
     ) {
+        // Fondo dividido en dos mitades horizontales
+        Column(modifier = Modifier.fillMaxSize()) {
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .fillMaxWidth()
+                    .background(Color.Black) // Color de la mitad superior
+            )
+            Box(
+                modifier = Modifier
+                    .weight(1f)
+                    .fillMaxWidth()
+                    .background(Color(0xFFD390C8)) // Color de la mitad inferior
+            )
+        }
         Card(
             modifier = Modifier
                 .width(340.dp)
@@ -69,7 +87,7 @@ fun PresentationCard() {
                     text = "Mariii Sants",
                     fontSize = 26.sp,
                     fontWeight = FontWeight.Bold,
-                    color = Color(0xFF1E88E5)
+                    color = Color(0xFFD390C8)
                 )
                 Text(
                     text = "Ingeniería en Software",
@@ -86,7 +104,7 @@ fun PresentationCard() {
                 Text(
                     text = "Redes sociales:",
                     fontWeight = FontWeight.SemiBold,
-                    color = Color(0xFF1E88E5)
+                    color = Color(0xFFD390C8)
                 )
                 Text(text = "LinkedIn: linkedin.com/in/mari")
                 Text(text = "GitHub: github.com/mari")
@@ -95,7 +113,7 @@ fun PresentationCard() {
                 Text(
                     text = "Habilidades:",
                     fontWeight = FontWeight.SemiBold,
-                    color = Color(0xFF1E88E5)
+                    color = Color(0xFFD390C8)
                 )
                 Text(text = "• Android (Kotlin, Compose)")
                 Text(text = "• SQL, figma")
